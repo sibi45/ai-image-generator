@@ -159,7 +159,7 @@ class File3D:
         if isinstance(self._source, str):
             return Path(self._source).read_bytes()
         if hasattr(self._source, "seek"):
-            self._source.seek(0)
+              self._source.seek(0)
         return self._source.read()
 
     def __repr__(self) -> str:
